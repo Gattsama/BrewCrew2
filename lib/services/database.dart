@@ -16,4 +16,9 @@ class DatabaseServices {
       'strength': strength,
     });
   }
+
+  //get Brews firestore stream
+  Stream<QuerySnapshot> get brews {
+    return brewCollection.snapshots();
+  }
 }
